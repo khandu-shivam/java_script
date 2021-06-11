@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script>
+		var a={
+			 fname :"vikash",
+			 lname :"jain",
+			 email :"jainvikas@gmail.com",
+
+			 favmovies :["dhoom","sholay","hum"],//object array
+
+
+			 //object ke andar object
+			 living: {
+			 	city:"Gwalior",
+			 	country:"india"
+			 },
+             salary :function(){
+             	return 25000;
+             },
+             fullname :function(){
+             	return this.fname+" "+this.lname; //var a ke liye this use
+             } 
+
+
+		}
+
+
+		document.write(a+"<br>");
+		document.write(a.favmovies+"<br>");
+		document.write(a.favmovies[1]+"<br>");
+		document.write(a.salary()+"<br>");
+		document.write(a.fullname()+"<br>");
+		document.write(a.living.city+"<br>");
+		document.write(a.living.country+"<br>");
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

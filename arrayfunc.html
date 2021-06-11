@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<script>
+
+        /*1*/var ages=[5,18,9,2];
+         document.write("1:-"+ ages +"<br>");
+
+        /*1a*/ var b =ages.some(a);     //check function a returns true if any of the value
+        document.write("1a:-"+ b + "<br><br>");                           //satisfy condition
+             function a(age){
+         	return age>=18;
+                }
+   
+        /*2*/ var ages=[20,18,19,21];
+        document.write("2:-"+ ages +"<br>");
+
+        /*2a*/var b =ages.every(a);    //checks and returns true if every value satisfies
+         document.write("2a:-"+ b + "<br><br>");
+             function a(age){
+        	return age>=18;
+                   }
+
+
+        /*3*/ var ages=[4,10,3,21];
+         document.write("3:-"+ ages +"<br>");
+
+        /*3a*/ var b =ages.find(adult);      //checks and print the first value satisfied
+         document.write("3a:-"+ b + "<br>");
+
+        /*3b*/ var c=ages.findIndex(adult);  //print index of satisfied value
+         document.write("3b:-"+ "index:=" + c + "<br><br>");
+
+              function adult(age){
+         	return age>=5;
+                  }
+
+        /*4*/ var ages=[20,18,19,21,25];
+        document.write("4:-"+ ages +"<br>");
+
+        /*4a*/ var b =ages.filter(a);    //print every value which satisfies
+        document.write("4a:-"+ b + "<br>");
+           function a(age){
+         	return age>=20;
+                  }
+	</script>
+</head>
+<body>
+
+</body>
+</html>
